@@ -9,6 +9,7 @@
 .major {
     background-color: var(--color-primary-variant);
     padding: 2rem 1rem;
+    width: 100%;
     color: var(--color-text);
     border-radius: 1rem;
     cursor: default;

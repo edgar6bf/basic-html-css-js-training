@@ -14,7 +14,16 @@ document.addEventListener("scroll", () => {
 const home = document.querySelector('.home__container');
 const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
+    // 실시간으로 정밀하게 값을 수정해야 하므로 CSS를 inline으로 설정
     home.style.opacity = 1 - (window.scrollY / homeHeight);
-    console.log(home.style.opacity);
 });
 
+// 화살표 아이콘 숨기기
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if (window.scrollY < homeHeight / 2) {
+        arrowUp.classList.add('arrow-up--hide');
+    } else {
+        arrowUp.classList.remove('arrow-up--hide');
+    }
+});

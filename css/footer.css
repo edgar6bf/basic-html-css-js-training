@@ -5,24 +5,18 @@
     position: relative;
 }
 
-.contact__divider {
+#contact::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.contact__divider svg {
-    position: relative;
-    display: block;
     width: calc(118% + 1.3px);
     height: 60px;
-}
-
-.contact__divider .shape-fill {
-    fill: #FFFFFF;
+    overflow: hidden;
+    line-height: 0;
+    background-color: var(--color-white);
+    mask: var(--divider-arrow);
+    -webkit-mask: var(--divider-arrow);
 }
 
 .contact__links {

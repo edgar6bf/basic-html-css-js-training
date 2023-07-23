@@ -5,25 +5,19 @@
     position: relative;
 }
 
-.skills__divider {
+#skills::after {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-}
-
-.skills__divider svg {
-    position: relative;
-    display: block;
     width: calc(118% + 1.3px);
     height: 60px;
-}
-
-.skills__divider .shape-fill {
-    fill: var(--color-primary);
+    background-color: var(--color-primary);
+    mask: var(--divider-multi-wave);
+    -webkit-mask: var(--divider-multi-wave);
 }
 
 .skills {

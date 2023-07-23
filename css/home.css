@@ -8,25 +8,19 @@
     position: relative;
 }
 
-.home__divider {
+#home::after {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-}
-
-.home__divider svg {
-    position: relative;
-    display: block;
     width: calc(100% + 1.3px);
     height: 60px;
-}
-
-.home__divider .shape-fill {
-    fill: #FFFFFF;
+    background-color: var(--color-white);
+    mask: var(--divider-single-wave);
+    -webkit-mask: var(--divider-single-wave);
 }
 
 .home__avatar {

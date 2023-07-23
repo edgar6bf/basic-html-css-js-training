@@ -5,6 +5,28 @@
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+    position: relative;
+}
+
+.home__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.home__divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.home__divider .shape-fill {
+    fill: #FFFFFF;
 }
 
 .home__avatar {
